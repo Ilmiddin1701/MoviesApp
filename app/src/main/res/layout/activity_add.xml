@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    android:background="@color/white"
+    tools:context=".AddActivity">
+
+    <EditText
+        android:id="@+id/edt_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/movie_name"
+        style="@style/MyEdtStyle"
+        android:textColorHint="#787878"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/edt_authors"
+        android:background="@drawable/fon_edit_text"
+        android:padding="15dp"/>
+    <EditText
+        android:id="@+id/edt_authors"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/movie_authors"
+        style="@style/MyEdtStyle"
+        android:textColorHint="#787878"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toBottomOf="@id/edt_name"
+        app:layout_constraintBottom_toTopOf="@id/edt_about_movie"
+        android:background="@drawable/fon_edit_text"
+        android:padding="15dp"/>
+    <EditText
+        android:id="@+id/edt_about_movie"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:gravity="start"
+        android:hint="@string/about_movie"
+        style="@style/MyEdtStyle"
+        android:textColorHint="#787878"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toBottomOf="@id/edt_authors"
+        app:layout_constraintBottom_toTopOf="@id/btn_save"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/fon_edit_text"
+        android:padding="15dp"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_save"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:text="@string/save"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:textSize="16sp"
+        app:cornerRadius="6dp"
+        android:textColor="@color/white"
+        android:backgroundTint="#66D6EF"
+        app:layout_constraintHorizontal_bias="0.9"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/edt_about_movie"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

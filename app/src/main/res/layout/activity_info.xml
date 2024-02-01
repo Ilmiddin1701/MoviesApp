@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal|start"
+    android:background="@color/white"
+    tools:context=".InfoActivity">
+
+    <TextView
+        android:id="@+id/tv_name_1"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="#66D6EF"
+        android:gravity="center_vertical|start"
+        android:paddingStart="15dp"
+        android:text="@string/avengers"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        tools:ignore="RtlSymmetry,TextContrastCheck" />
+
+    <TextView
+        android:id="@+id/tv_name_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/movie_name_avengers"
+        android:textColor="@color/black"
+        android:textSize="35sp"
+        android:paddingLeft="22dp"
+        android:paddingRight="22dp"
+        android:layout_marginTop="25dp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/tv_authors"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:textColor="@color/black"
+        android:paddingLeft="22dp"
+        android:paddingRight="22dp"
+        android:text="@string/movie_authors_avengers"
+        android:textSize="30sp"/>
+
+    <TextView
+        android:id="@+id/tv_about"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="22dp"
+        android:paddingRight="22dp"
+        android:text="@string/about_movie_avengers"
+        android:textColor="@color/black"
+        android:layout_marginTop="25dp"
+        android:textSize="30sp"/>
+
+    <TextView
+        android:id="@+id/tv_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="22dp"
+        android:paddingRight="22dp"
+        android:text="@string/date_01_02_2024"
+        android:textColor="@color/black"
+        android:layout_marginTop="25dp"
+        android:textSize="30sp"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_close"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|end"
+        android:layout_marginTop="320dp"
+        android:layout_marginRight="35dp"
+        android:backgroundTint="#66D6EF"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:text="@string/close"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:cornerRadius="6dp"
+        tools:ignore="RtlHardcoded,TextContrastCheck" />
+
+</LinearLayout>
